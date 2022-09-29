@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>yavtechnology.com/talk-to-mentor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="container">
+      <form id="my-form">
+        <center><h1>Book a Call</h1></center>
+        <center><p>Book a call slot and our representative will call you within 1hr of selected time</p></center>
+       <hr><br>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        
+        
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        
+            <lable for="phone">Phone:</lable><br>
+            <input type="text" id="phone">
+        
+            <lable for="time for call">Time for call:</lable><br>
+            <input type="datetime-local" id="time for call"><br>
+        </div>
+       <center><input class="btn" type="submit" onclick="saveData()" value="Get a call"></center>
+      </form>
+    </section>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: azure;
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+  }
+  h1{
+    padding:5px;
+    color:rgb(182, 25, 25);
+    background: text='Call';
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    padding: 5px;
+    background: #f4f4f4;
+    margin: 5px 0;
+  }
+  header {
+    background: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .container {
+    margin: auto;
+    width: 700px;
+    overflow: auto;
+    border:0 orange;
+  }
+  
+  #my-form {
+    padding: 1rem;
+    background: rgb(180, 224, 224);
+    border: 2px solid;
+    border-color:black;
+    border-radius: 10px;
+  }
+  
+  #my-form label {
+    display: block;
+  }
+  hr {
+    border: 1px solid black;
+    margin-top: 20px;
+  }
+  #my-form input[type='text'],[type='datetime-local'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px 50px;
+    border: 2;
+    background: rgb(182, 25, 25);
+    color: rgb(247, 240, 240);
+    border-radius: 60px;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background: rgb(182, 25, 25);
+    color: rgb(0, 0, 0);
+  }
+  
