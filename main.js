@@ -1,15 +1,27 @@
-let myObj = {
-    name : "kiran",
-    age : 25
+function myfunc(event) {
+    event.preventDefault()
+    const Name = event.target.Name.value;
+    const Email = event.target.Email.value;
+    const Phone = event.target.Phone.value;
+    const TTC = event.target.timeforcall.value;
+    const myObj = {
+        Name,
+        Email,
+        Phone,
+        TTC
+    }
+    localStorage.setItem(myObj.Email,JSON.stringify(myObj));
 }
-localStorage.setItem("myObj", myObj);
-console.log(localStorage);
+// getting data from local storage.
 
-let myObj_serialized = JSON.stringify(myObj);
-//console.log(myObj_serialized);
+window.addEventListener("DOMContentLoaded", () => {
+    
+    const localStoragemyObj = localStorage;
+    const localStorageKeys = Object.keys(localStoragemyObj);
 
-localStorage.setItem("myObj", myObj_serialized);
-//console.log(localStorage);
-
-let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
-console.log(myObj_deserialized);
+    for(var i = 0; i < localStorageKeys.lenght; i++){
+      const key = localStorageKeys[i]
+      const UserDetailsString = localStoragemyObj[key];
+      const UserDetailsmyObj = JSON.parse(UserDetailsString);
+    }
+ })
